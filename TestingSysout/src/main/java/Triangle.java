@@ -4,15 +4,21 @@
 public class Triangle implements TrianglePrintable {
 
     public void printTriangle(int numberOfLevels) {
-        for (int i = 1; i <= numberOfLevels; i++) {
-            printTriangleLevel(numberOfLevels, i);
+        if (numberOfLevels == 0) {
+            System.out.print("");
+        } else if (numberOfLevels == 1) {
+            System.out.print("*");
+        } else {
+            for (int i = 1; i <= numberOfLevels; i++) {
+                printTriangleLevel(numberOfLevels, i);
+            }
         }
     }
 
     private void printTriangleLevel(int numberOfLevels, int actualLevel) {
         printSpaces(numberOfLevels, actualLevel);
         printStars(actualLevel);
-        System.out.println();
+        if (numberOfLevels > actualLevel) System.out.println();
     }
 
     private void printSpaces(int numberOfLevels, int actualLevel) {
