@@ -1,3 +1,5 @@
+package complex.triangle;
+
 /**
  * Created by iwonasasak on 14.03.2018.
  * <p>
