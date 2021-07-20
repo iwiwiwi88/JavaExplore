@@ -52,10 +52,10 @@ public class FizzBuzz {
     private static void preRunWithIntArray(int x) {
         int[] nums = new int[x + 1];
 
-        for (int i = 1; i <= x; i += 3) {
+        for (int i = 3; i <= x; i += 3) {
             nums[i]++;
         }
-        for (int i = 1; i <= x; i += 5) {
+        for (int i = 5; i <= x; i += 5) {
             nums[i] += 2;
         }
 
@@ -80,10 +80,10 @@ public class FizzBuzz {
     private static void preRunWithStringArray(int x) {
         String[] s = new String[x + 1];
 
-        for (int i = 1; i <= x; i += 3) {
+        for (int i = 3; i <= x; i += 3) {
             s[i] = FIZZ;
         }
-        for (int i = 1; i <= x; i += 5) {
+        for (int i = 5; i <= x; i += 5) {
             s[i] = s[i] == null ? BUZZ : s[i] + BUZZ;
         }
 
